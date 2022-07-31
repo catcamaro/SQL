@@ -1,0 +1,21 @@
+CREATE TABLE groceries (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, color TEXT); 
+
+INSERT into groceries VALUES (1, "apples", 2.99, "red");
+INSERT into groceries VALUES (2, "tomatoes", 1.99, "red");
+INSERT into groceries VALUES (3, "oranges", 1.00, "orange");
+INSERT into groceries VALUES (4, "bell pepper", .90, "orange");
+INSERT into groceries VALUES (5, "bananas", 1.29, "yellow");
+INSERT into groceries VALUES (6, "lemons", 1.15, "yellow");
+INSERT into groceries VALUES (7, "limes", 1.00, "green");
+INSERT into groceries VALUES (8, "cucumbers", 1.29, "green");
+INSERT into groceries VALUES (9, "blueberries", 1.59, "blue");
+INSERT into groceries VALUES (10, "bleu cheese", 2.00, "blue");
+INSERT into groceries VALUES (11, "lettuce", 2.69, "green");
+INSERT into groceries VALUES (12, "carrots", 1.70, "orange");
+INSERT into groceries VALUES (13, "onions", 2.70, "yellow");
+INSERT into groceries VALUES (14, "strawberries", 2.15, "red");
+INSERT into groceries VALUES (15, "blackberries", 2.00, "black"); 
+
+SELECT * FROM groceries; 
+SELECT * FROM groceries ORDER BY price asc;
+SELECT * FROM groceries ORDER BY color
