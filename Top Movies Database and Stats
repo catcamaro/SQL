@@ -130,3 +130,11 @@ SELECT title, AVG (domestic) AS avg_domestic FROM topmovies
 GROUP BY title 
 HAVING avg_domestic > 300;
 HAVING avg_domestic > 300; 
+
+-Display data of top movies where overseas greater than 400 - 
+-Display data of top movies where overseas is greater than 400 and overseaspct is less than 200-
+-Display data of top movies where overseas is greater than 400 or domestic is greater than 300- 
+
+SELECT * FROM topmovies WHERE overseas > 400 ORDER BY overseas;
+SELECT * FROM topmovies WHERE overseas > 400 AND overseaspct < 200; 
+SELECT * FROM topmovies WHERE overseas > 400 OR domestic > 300;
